@@ -3,10 +3,7 @@
 ###Android 空页面|错误页面|加载中页面处理，支持所有的布局,使用简单方便
 
 ## Screenshots ##
-![](/screenshots/data.png)
-![](/screenshots/loading.png)
-![](/screenshots/error.png)
-![](/screenshots/empty.png)
+![](/screenshots/data.png) ![](/screenshots/loading.png) ![](/screenshots/error.png) ![](/screenshots/empty.png)
 ## EmptyLayout使用 ##
 
 > 现在还没有搞定bintray，暂时可以这么使用。
