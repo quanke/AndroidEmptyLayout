@@ -4,10 +4,30 @@
 
 ## EmptyLayout使用 ##
 
-1.在布局文件里增加
+
+1.把aar/emptylayout-release.aar文件放在libs目录内
+
+2.在app的build.gradle文件添加如下内容
 
 ```
-<name.quanke.app.libs.emptylayout.EmptyLayout
+repositories {
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+}
+}
+```
+3、之后在其他项目中添加一句gradle依赖便方便的引用了该library
+
+```
+dependencies {
+    compile(name:'test', ext:'aar')
+}
+```
+
+4.在布局文件里增加
+
+```
+	<name.quanke.app.libs.emptylayout.EmptyLayout
         android:id="@+id/emptyLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -21,10 +41,11 @@
     </name.quanke.app.libs.emptylayout.EmptyLayout>
 	
 ```
-2.代码里增加：
+
+5.代码里增加：
 
 ```
-findViewById(R.id.btnLoading).setOnClickListener(new View.OnClickListener() {
+		findViewById(R.id.btnLoading).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 emptyLayout.showLoading();
@@ -48,4 +69,18 @@ findViewById(R.id.btnLoading).setOnClickListener(new View.OnClickListener() {
                 emptyLayout.hide();
             }
         });
+```
+
+```
+Copyright 2016 ken.cai (http://quanke.name)
+ 
+   Licensed under the Apache License, Version 2.0 (the "License");
+ 	you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+   http://www.apache.org/licenses/LICENSE-2.0
+	Unless required by applicable law or agreed to in writing, software
+ 	distributed under the License is distributed on an "AS IS" BASIS,
+ 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ 	See the License for the specific language governing permissions and
+ 	limitations under the License.
 ```
