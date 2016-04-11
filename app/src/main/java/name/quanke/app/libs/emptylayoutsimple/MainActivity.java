@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
 
         emptyLayout = (EmptyLayout) findViewById(R.id.emptyLayout);
 
+        emptyLayout.setErrorButtonClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
         findViewById(R.id.btnLoading).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
