@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EmptyLayout</string>
+    <string name="empty_message">啥也没有</string>
+    <string name="loading_message">请等一等啦ლ(╹◡╹ლ)</string>
+    <string name="error_message">哎呀！发生了一些错误</string>
+
+    <string name="empty_button">重试</string>
+    <string name="loading_button">取消</string>
+    <string name="error_button">重试</string>
+</resources>
