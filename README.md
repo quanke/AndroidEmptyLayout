@@ -6,28 +6,32 @@
 ![](/screenshots/data.png) ![](/screenshots/loading.png) ![](/screenshots/error.png) ![](/screenshots/empty.png)
 ## EmptyLayout使用 ##
 
-> 现在还没有搞定bintray，暂时可以这么使用。
 
-1.把aar/emptylayout-release.aar文件放在libs目录内
-
-2.在app的build.gradle文件添加如下内容
+1.打开 Project root 的 build.gradle 
 
 ```
-repositories {
-    flatDir {
-        dirs 'libs' //this way we can find the .aar file in libs folder
-}
-}
+
+allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }
+		}
+	}
+	
 ```
-3、之后在其他项目中添加一句gradle依赖便方便的引用了该library
+
+2.增加dependency
 
 ```
+
 dependencies {
-    compile(name:'test', ext:'aar')
-}
+	        compile 'com.github.quanke:AndroidEmptyLayout:v1.0.0'
+	}
+
 ```
 
-4.在布局文件里增加
+
+3.在布局文件里增加
 
 ```
 	<name.quanke.app.libs.emptylayout.EmptyLayout
@@ -45,7 +49,7 @@ dependencies {
 	
 ```
 
-5.代码里增加：
+4.代码里增加：
 
 ```
 		findViewById(R.id.btnLoading).setOnClickListener(new View.OnClickListener() {
