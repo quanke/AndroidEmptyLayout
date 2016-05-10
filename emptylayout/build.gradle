@@ -3,12 +3,12 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 group='com.github.quanke'
 android {
-    compileSdkVersion 22
+    compileSdkVersion 21
     buildToolsVersion "22.0.0"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 22
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }
