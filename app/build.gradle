@@ -23,7 +23,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:22.1.2'
-    compile 'com.android.support:design:22.1.2'
+    compile 'com.android.support:appcompat-v7:21.1.2'
+    compile 'com.android.support:design:21.1.2'
     compile project(':emptylayout')
 }
