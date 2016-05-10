@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.0.2"
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "name.quanke.app.libs.emptylayoutsimple"
@@ -23,7 +23,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:21.1.1'
-    compile 'com.android.support:design:21.1.1'
+    compile 'com.android.support:appcompat-v7:21.1.2'
+    compile 'com.android.support:design:21.1.2'
     compile project(':emptylayout')
 }
